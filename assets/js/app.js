@@ -1,6 +1,6 @@
 let selection = document.querySelector('.selection');
 let selection_icon = document.querySelector('#selection-icon');
-let selection_bar = document.querySelector('#selection-bar')
+let selection_bar = document.querySelector('#selection-bar');
 let selected = document.querySelector('.selection span');
 
 selection.addEventListener('click', function () {
@@ -42,4 +42,21 @@ search_btn.addEventListener('click', function(){
 search_close.addEventListener('click', function(){
     search_area.classList.add('none');
     search_btn.classList.remove('blue');
+})
+
+let sidebar_btn = document.querySelector('#sidebar-btn');
+let sidebar = document.querySelector('#sidebar-menu');
+
+
+sidebar_btn.addEventListener('click', function(){
+    if (sidebar_btn.classList.contains('fa-bars')) {
+        sidebar_btn.classList.remove('fa-bars');
+        sidebar_btn.classList.add('fa-x');
+        sidebar.classList.remove('none');
+    }
+    else {
+        sidebar_btn.classList.remove('fa-x');
+        sidebar_btn.classList.add('fa-bars');
+        sidebar.classList.add('none');
+    }
 })
