@@ -92,11 +92,16 @@ ul {
     width: 20%;
 }
 
+.selection-bar{
+    position: fixed;
+    z-index: 1;
+}
+
 #selection-bar {
     background-color: #fff;
     position: relative;
     top: -9px;
-    left: 78.5rem;
+    left: 20rem;
     width: 160px;
     height: 110px;
     box-shadow: 0px 0px 11px -3px black;
@@ -202,10 +207,6 @@ ul {
 
     .h-t-all .right .selection {
         width: 21%;
-    }
-
-    #selection-bar {
-        left: 45rem;
     }
 
     #search-area {

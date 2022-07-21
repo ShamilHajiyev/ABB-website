@@ -3,6 +3,15 @@ let selection_icon = document.querySelector('#selection-icon');
 let selection_bar = document.querySelector('#selection-bar');
 let selected = document.querySelector('.selection span');
 
+ResponsiveSelectionBar();
+window.addEventListener('resize', function () {
+    ResponsiveSelectionBar()
+})
+
+function ResponsiveSelectionBar() {
+    selection_bar.style.left = selection_icon.getBoundingClientRect().x - 125 + 'px';
+}
+
 selection.addEventListener('click', function () {
     ToggleSelectionBar();
 })
@@ -34,12 +43,12 @@ let search_btn = document.querySelector('.search');
 let search_area = document.querySelector('#search-area');
 let search_close = document.querySelector('#btn-close');
 
-search_btn.addEventListener('click', function(){
+search_btn.addEventListener('click', function () {
     search_area.classList.toggle('none');
     search_btn.classList.toggle('blue');
 })
 
-search_close.addEventListener('click', function(){
+search_close.addEventListener('click', function () {
     search_area.classList.add('none');
     search_btn.classList.remove('blue');
 })
@@ -48,7 +57,7 @@ let sidebar_btn = document.querySelector('#sidebar-btn');
 let sidebar = document.querySelector('#sidebar-menu');
 
 
-sidebar_btn.addEventListener('click', function(){
+sidebar_btn.addEventListener('click', function () {
     if (sidebar_btn.classList.contains('fa-bars')) {
         sidebar_btn.classList.remove('fa-bars');
         sidebar_btn.classList.add('fa-x');
