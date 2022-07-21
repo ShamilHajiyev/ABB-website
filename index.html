@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://abb-bank.az/img/favicon.png" type="image/x-icon">
+    <title>ABB - Homework</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section id="header-top">
+        <div class="container">
+            <div class="h-t-all">
+                <div class="left">
+                    <a href="#">Tender elanları</a>
+                    <a href="#">Haqqımızda</a>
+                    <a href="#">Tariflər</a>
+                    <a href="#">Xəbərlər</a>
+                    <a href="#">Xidmət şəbəkəsi</a>
+                    <a href="#">Təklif və şikayətlər</a>
+                    <a href="#">Onlayn xidmətlər</a>
+                    <a class="portal" href="#"><span>Karyera portalı</span></a>
+                </div>
+                <div class="right">
+                    <div class="search">
+                        <i class="fas fa-search"></i>
+                        <span>Axtarış</span>
+                    </div>
+                    <div class="selection">
+                        <span>AZ</span>
+                        <i id="selection-icon" class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <a href="tel:" class="phone">
+                        <i class="fas fa-phone"></i>
+                        <span>937</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="selection-bar" class="none">
+        <ul>
+            <li id="az" class="none" onclick="Change(event)">AZ</li>
+            <li id="en" onclick="Change(event)">EN</li>
+            <li id="ru" onclick="Change(event)">RU</li>
+        </ul>
+    </div>
+
+    <div id="search-area" class="none">
+        <div class="container">
+            <div class="s-a-all">
+                <input type="text" placeholder="Sizə necə kömək edə bilərik?">
+                <i id="btn-close" class="fas fa-x"></i>
+            </div>
+        </div>
+    </div>
+
+    <section id="header-mid">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section id="header-bottom">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

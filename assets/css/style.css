@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    padding: 0 3rem;
+    height: 100%;
+}
+
+#header-top{
+    background-color: #F6F7F8;
+    color: #6B6873;
+    height: 60px;
+}
+
+.h-t-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.h-t-all .left{
+    display: flex;
+    align-items: center;
+}
+
+.h-t-all .left a{
+    margin-right: 25px;
+}
+
+.h-t-all .left a:hover{
+    text-decoration: underline;
+}
+
+.h-t-all .left a.portal{
+    color: #0056C1;
+    border: solid 1px #0056C1;
+    border-radius: 30px;
+    padding: 5px 8px;
+    display: inline-flex;
+    align-items: center;
+    transition: .4s;
+}
+
+.h-t-all .left a.portal:hover{
+    color: #F6F7F8;
+    background-color: #0056C1;
+    text-decoration: none;
+}
+
+.h-t-all .right{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.h-t-all .right .search,
+.h-t-all .right .phone,
+.h-t-all .right .selection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.h-t-all .right .search{
+    width: 32%;    
+}
+
+.h-t-all .right .selection{
+    width: 17%;    
+}
+
+#selection-icon{
+    transition: .4s;
+}
+
+.h-t-all .right .phone{
+    width: 20%;
+}
+
+#selection-bar{
+    background-color: #fff;
+    position: relative;
+    top: -9px;
+    left: 78.5rem;
+    width: 160px;
+    height: 110px;
+    box-shadow: 0px 0px 11px -3px black;
+    cursor: pointer;
+}
+
+#selection-bar ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#selection-bar ul li{
+    height: 50%;
+    width: 100%;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#selection-bar ul li:hover{
+    background-color:#F6F7F8;
+    transition: .4s;
+}
+
+.none{
+    display: none !important;
+}
+
+.blue{
+    color: #0056C1;
+}
+
+#selection-bar::before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: 22px;
+    background-color: #F6F7F8;
+    height: 1em;
+    width: 1em;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.s-a-all{
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    color: #6B6873;
+}
+
+.s-a-all input{
+    border: none;
+    outline: none;
+    font-size: 30px;
+    width: 90%;
+    color: #6B6873;
+}
+
+.s-a-all i{
+    font-size: 30px;
+    width: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
